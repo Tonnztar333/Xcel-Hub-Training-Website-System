@@ -1,7 +1,7 @@
 const navToggle = document.querySelector(".nav-toggle");
 const siteNav = document.querySelector(".site-nav");
 const navLinks = document.querySelectorAll(".site-nav a");
-const images = document.querySelectorAll(".image-shell img, .brand img");
+const contactForm = document.querySelector(".contact-form");
 
 function closeNav() {
   if (!navToggle || !siteNav) return;
@@ -31,14 +31,8 @@ if (navToggle && siteNav) {
   });
 }
 
-images.forEach((image) => {
-  image.addEventListener("error", () => {
-    const imageShell = image.closest(".image-shell");
-
-    if (imageShell) {
-      imageShell.classList.add("is-missing");
-    } else {
-      image.hidden = true;
-    }
+if (contactForm) {
+  contactForm.addEventListener("submit", (event) => {
+    event.preventDefault();
   });
-});
+}
