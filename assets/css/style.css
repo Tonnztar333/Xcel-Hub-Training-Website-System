@@ -123,9 +123,8 @@ textarea {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(52, 82, 79, 0.96);
+  background: var(--dark-green);
   box-shadow: 0 8px 28px rgba(34, 51, 49, 0.16);
-  backdrop-filter: blur(12px);
 }
 
 .nav-wrap {
@@ -141,13 +140,13 @@ textarea {
 .brand {
   display: inline-flex;
   align-items: center;
-  width: min(220px, 56vw);
+  width: min(250px, 58vw);
   text-decoration: none;
 }
 
 .brand img {
   width: 100%;
-  max-height: 56px;
+  max-height: 58px;
   object-fit: contain;
 }
 
@@ -808,7 +807,7 @@ textarea {
   }
 
   .brand {
-    width: min(190px, 62vw);
+    width: min(210px, 64vw);
   }
 
   .site-nav {
